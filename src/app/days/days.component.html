@@ -1,0 +1,7 @@
+<table>
+        <tr *ngFor="let x of days; let i = index">
+            <td *ngFor="let y of x" [ngClass]="{'sunday': y == 'Sun'}">
+                {{y}}
+            </td>
+        </tr>
+    </table>

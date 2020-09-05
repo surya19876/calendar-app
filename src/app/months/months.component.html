@@ -1,0 +1,7 @@
+<table>
+    <tr *ngFor="let x of months; let i = index">
+        <td *ngFor="let y of x; let j=index" [ngClass]="{'isSelected': i == selectedRow && j == selectedCol}">
+            <p *ngIf="y" (click)="selectMonth(y,i,j)">{{y | date:'MMM'}}</p>
+        </td>
+    </tr>
+</table>

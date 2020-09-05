@@ -1,0 +1,7 @@
+<table>
+    <tr *ngFor="let x of dates; let i = index">
+        <td *ngFor="let y of x; let j= index" [ngClass]="{'isSelected': y == date}">
+            {{y}}
+        </td>
+        </tr>
+</table>

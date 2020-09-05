@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calendar-app';
+  year: number;
+  month: Date;
+
+  updateYear(year: number)
+  {
+    this.year = year;
+  }
+
+  selectedMonth(month)
+  {
+    this.month = new Date(month);
+  }
 }
